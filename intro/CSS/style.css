@@ -1,0 +1,26 @@
+/* Before the content of the element*/
+div::before {
+  content: "Before the content ";
+}
+/* After the content of the element*/
+
+div::after {
+  content: "After the content";
+}
+
+/* first Letter*/
+div::first-letter {
+  color: blueviolet;
+}
+/* first line*/
+div::first-line {
+  color: peru;
+}
+
+.hover:hover {
+  color: chocolate;
+  padding: 20px;
+}
+.active:active {
+  color: aqua;
+}
