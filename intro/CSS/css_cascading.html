@@ -14,11 +14,80 @@
       h1 {
         color: red;
       }
+
+      .parent {
+        color: crimson;
+      }
+
+      .classrule {
+        color: blueviolet !important;
+      }
+
+      #idrule {
+        color: aqua;
+      }
+      h2 {
+        color: black;
+      }
+      .container .c1 {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+      }
+      .c1 {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+      }
+
+      .container .c1 .c2 {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+      }
+      .c1 .c2 {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+      }
+      .c2 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
     </style>
   </head>
   <body>
     <!-- Last Rule principle -->
     <!-- principle states that if two rules has identical selectors, last one takes precedence -->
     <h1>Hi there</h1>
+    <!-- Inheritance principle -->
+    <!-- Principle states that whethere child element gets properties handed down by the parent -->
+    <div class="parent">
+      <div class="child">
+        <p>I am the inherited style</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
+          corrupti explicabo earum repellat! Totam nisi dignissimos aliquid
+          iure? Sed eum doloremque earum fugit deleniti ab cupiditate
+          perspiciatis quas iusto magnam?
+        </p>
+        <h1>Hi</h1>
+      </div>
+    </div>
+
+    <!-- Specificity rule -->
+    <!-- principle where one or more rule apply, the more specific one takes precedence over general ones -->
+    <!--  !important > inline > id > class > elem selector -->
+    <h2 class="classrule" id="idrule" style="color: cornflowerblue">
+      Specificity Rule
+    </h2>
+
+    <div class="container">
+      <div class="c1">
+        <div class="c2"></div>
+      </div>
+    </div>
+    <div class="c1"></div>
   </body>
 </html>
