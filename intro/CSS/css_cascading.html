@@ -45,6 +45,7 @@
         height: 100px;
         background-color: blue;
       }
+      /*don't go more than three level of nesting*/
       .c1 .c2 {
         width: 100px;
         height: 100px;
@@ -89,5 +90,13 @@
       </div>
     </div>
     <div class="c1"></div>
+    <!-- a,b,c,d -->
+    <!-- a = 1 - if it style attribute or 0-->
+    <!-- b = 1 if it has id attribute or 0  -->
+    <!-- c = any number if it is declared with other selectore/pseudo -->
+    <!-- d = 3  if it -->
+
+    <!-- a =0,b=0,c =1,d=3  = 4 -->
+    <!-- a =0,b=0,c =1,d=2 = 3-->
   </body>
 </html>
