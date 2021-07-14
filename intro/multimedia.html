@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia</title>
+  </head>
+  <body>
+    <!-- Image tag -->
+    <figure>
+      <img
+        width="300px"
+        height="400px"
+        src="https://images.unsplash.com/photo-1626120032630-b51c96a544f5?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60"
+        alt="Apple juice"
+      />
+      <figcaption>Apple juice</figcaption>
+      <img
+        width="300px"
+        height="300px"
+        src="https://images.unsplash.com/photo-1626169572088-5959632d71e5?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60"
+      />
+      <figcaption>Background</figcaption>
+    </figure>
+
+    <!-- audio with src -->
+    <audio controls src="https://www.w3schools.com/html/horse.ogg"></audio>
+
+    <!-- audio with source tag -->
+    <audio controls>
+      <source src="https://www.w3schools.com/html/horse.ogg" />
+      <!-- line 32 doesn't load ogg file properly or it is corrputed -->
+      <source src="https://www.w3schools.com/html/horse.mp3" />
+    </audio>
+
+    <!-- video tag -->
+    <video controls>
+      <source
+        src="https://www.w3schools.com/html/movie.mp4
+        "
+      />
+    </video>
+  </body>
+</html>
