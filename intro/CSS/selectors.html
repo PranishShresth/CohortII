@@ -8,6 +8,7 @@
     <style>
       /*universal selector */
       * {
+        padding: 20px 0;
       }
       /*element selector */
 
@@ -42,6 +43,30 @@
       #class5 {
         color: yellowgreen;
       }
+
+      /* attribute value selector*/
+      a[href="#"] {
+        color: black;
+      }
+      /* child selector*/
+      .c1 > h1 {
+        color: red;
+      }
+
+      /* descendant selector*/
+      .c1 h2 {
+        color: tomato;
+      }
+      /* sibling selector*/
+
+      h3 ~ p {
+        color: brown;
+      }
+      /* adjacent sibling selector*/
+
+      h3 + p {
+        color: coral;
+      }
     </style>
   </head>
   <body>
@@ -51,5 +76,22 @@
     <h1 class="param">This is my third heading</h1>
     <h1 class="class4">Class 4</h1>
     <h2 id="class5">Class 5 with ID</h2>
+    <a href="#">HEllo world</a>
+
+    <div class="c1">
+      <h1>I m from C1</h1>
+      <h1>Direct Child</h1>
+      <h2>Descendant</h2>
+      <div>
+        <h1>Hello</h1>
+        <h2>Descendant</h2>
+      </div>
+    </div>
+    <h3>Sibling Selector</h3>
+    <p>Hi i m the closest siblings of h3</p>
+    <p>Hi i m the siblings of h3</p>
+    <p>Hi i m the siblings of h3</p>
+    <p>Hi i m the siblings of h3</p>
+    <p>Hi i m the siblings of h3</p>
   </body>
 </html>
