@@ -24,3 +24,11 @@ div::first-line {
 .active:active {
   color: aqua;
 }
+
+.visited:visited {
+  color: red;
+}
+
+input[type="text"]:focus {
+  background-color: pink;
+}
