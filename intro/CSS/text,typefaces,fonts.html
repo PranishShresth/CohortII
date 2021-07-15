@@ -7,6 +7,7 @@
     <title>Text, Typefaces and Fonts</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
       /**/
       @font-face {
         font-family: "CohortIIFont";
@@ -32,14 +33,93 @@
       .pranish {
         font-family: "Vollkorn", serif;
       }
+
+      .fontSizes p {
+        font-size: xx-large;
+      }
+
+      .fontSizes .px {
+        font-size: 40px;
+      }
+
+      html {
+        font-size: 20px;
+      }
+      .fontSizes .rem {
+        /* default font size is alwasy 16px*/
+        /* font size set as 10px, 1rem is equal to 10px*/
+        font-size: 2rem;
+      }
+      body {
+        font-size: 16px;
+      }
+
+      /*
+      body has fontsize = 8px
+      for fontSizes, 2em = 16px
+      for fontSize em , 4em = 4 * 16 = 64px
+      */
+      .fontSizes {
+        font-size: 2em;
+      }
+
+      .fontSizes .em {
+        font-size: 2em;
+      }
+
+      .percentages {
+        font-size: 90%;
+      }
     </style>
   </head>
   <body>
-    <h1>Cohort II - Default Font</h1>
-    <h2 class="param">Param</h2>
-    <h2 class="darlene">Darlene</h2>
-    <h2 class="dazz">Dazz</h2>
-    <h2 class="pranish">Pranish</h2>
-    <h2 class="raleway">Font raleway</h2>
+    <section>
+      <h1>Cohort II - Default Font</h1>
+      <h2 class="param">Param</h2>
+      <h2 class="darlene">Darlene</h2>
+      <h2 class="dazz">Dazz</h2>
+      <h2 class="pranish">Pranish</h2>
+      <h2 class="raleway">Font raleway</h2>
+    </section>
+
+    <!-- Size of the text -->
+    <!-- %,px,rem,em,vw,vh,in-->
+    <!-- Absolute units, Relative units and Percentageg -->
+    <!-- fontsize =16px , .percentages = 90% = 90% of 16px -->
+    <section class="fontSizes">
+      <p>Hi I am student of THS</p>
+      <p class="px">I am using px for the font size</p>
+      <p class="rem">Hello world</p>
+      <p class="em">Hi i am from em</p>
+      <p class="percentages">Pranish</p>
+    </section>
+
+    <!-- Font weight -->
+    <h1>Font weight</h1>
+
+    <p style="font-weight: 700">Make it bolder</p>
+    <p style="font-weight: 400">Make it bolder</p>
+    <p style="font-weight: 500">Make it bolder</p>
+    <p style="font-weight: 200">Make it bolder</p>
+    <p style="font-weight: 900">Make it bolder</p>
+
+    <!-- Alignments -->
+    <!-- left,right,centre,justify -->
+    <h1>Content Alignments</h1>
+    <p style="text-align: left">
+      Corporis veritatis temporibus itaque.Corporis veritatis temporibus itaque.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nam
+      quidem at explicabo adipisci. Illo expedita, qui modi, consequatur
+      perferendis vel reprehenderit dicta odit laboriosam, corporis asperiores
+      numquam quo aliquam.
+    </p>
+    <p style="text-align: right">Corporis veritatis temporibus itaque.</p>
+    <p style="text-align: center">Corporis veritatis temporibus itaque.</p>
+    <p style="text-align: justify">
+      Corporis veritatis temporibus itaque. Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Expedita nam quidem at explicabo adipisci.
+      Illo expedita, qui modi, consequatur perferendis vel reprehenderit dicta
+      odit laboriosam, corporis asperiores numquam quo aliquam.
+    </p>
   </body>
 </html>
