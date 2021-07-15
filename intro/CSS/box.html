@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .box1,
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        margin: 20px 0;
+      }
+      /*width = width + padding + border*/
+      /*width =*/
+      .box1 {
+        padding: 40px;
+      }
+
+      .box2 {
+        background-color: wheat;
+        padding: 40px;
+      }
+
+      .content {
+        width: 200px;
+        height: 200px;
+        min-width: 500px;
+        min-height: 500px;
+        max-height: 700px;
+        max-width: 600px;
+        overflow: scroll;
+      }
+      /*box sizing propery - border-box */
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <!-- overflow -->
+    <div class="content">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nemo et
+      officiis eius nulla, dicta amet voluptas officia, rerum quia veniam,
+      soluta laborum. Sed nam quas repellat sit. Asperiores, sint? Lorem ipsum
+      dolor sit, amet consectetur adipisicing elit. Eaque, fugiat. Ipsam natus
+      dolores reiciendis repellat esse aut ad placeat officia fuga doloribus,
+      porro, modi tenetur saepe eaque, explicabo minus consequatur.
+    </div>
+  </body>
+</html>
