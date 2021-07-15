@@ -63,6 +63,22 @@
       .box5 {
         transform: translate(-50px, 50px);
       }
+
+      .box6 {
+        transform: scale(1);
+        transition: transform 2s ease;
+      }
+      .box6:hover {
+        transform: scale(2);
+      }
+
+      .box7 {
+        transform: skewX(30deg);
+      }
+
+      .box8 {
+        transform: perspective(400px) rotateY(50deg) scale(2);
+      }
       /*box sizing propery - border-box */
     </style>
   </head>
@@ -81,12 +97,30 @@
 
     <!-- Transform properties -->
     <!-- Centre a div -->
+    <h1>Centre a div</h1>
     <div class="box3"></div>
 
     <!-- Rotation -->
+    <h1>Rotate a div</h1>
     <div class="box4"></div>
 
     <!-- Translate -->
+    <h1>Translate a div</h1>
     <div class="box5"></div>
+    <h1>Scale a div</h1>
+    <div class="box6"></div>
+    <h1>Skew a div</h1>
+    <div class="box7"></div>
+    <h1>Perspective</h1>
+    <div class="box8"></div>
+
+    <div class="cube">
+      <div class="face one">1</div>
+      <div class="face six">6</div>
+      <div class="face four">4</div>
+      <div class="face three">3</div>
+      <div class="face five">5</div>
+      <div class="face two">2</div>
+    </div>
   </body>
 </html>
