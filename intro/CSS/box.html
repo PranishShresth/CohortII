@@ -12,11 +12,18 @@
         box-sizing: border-box;
       }
       .box1,
-      .box2 {
+      .box2,
+      .box3,
+      .box4,
+      .box5,
+      .box6,
+      .box7,
+      .box8 {
         width: 100px;
         height: 100px;
         background-color: brown;
         margin: 20px 0;
+        margin: 100px auto;
       }
       /*width = width + padding + border*/
       /*width =*/
@@ -38,6 +45,24 @@
         max-width: 600px;
         overflow: scroll;
       }
+
+      .box3 {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .box4 {
+        transform: rotate(45deg);
+        transition: transform 2s ease;
+      }
+
+      .box4:hover {
+        transform: rotate(360deg);
+      }
+
+      .box5 {
+        transform: translate(-50px, 50px);
+      }
       /*box sizing propery - border-box */
     </style>
   </head>
@@ -53,5 +78,15 @@
       dolores reiciendis repellat esse aut ad placeat officia fuga doloribus,
       porro, modi tenetur saepe eaque, explicabo minus consequatur.
     </div>
+
+    <!-- Transform properties -->
+    <!-- Centre a div -->
+    <div class="box3"></div>
+
+    <!-- Rotation -->
+    <div class="box4"></div>
+
+    <!-- Translate -->
+    <div class="box5"></div>
   </body>
 </html>
