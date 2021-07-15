@@ -4,7 +4,100 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Positioning a Element</title>
+    <style>
+      .relative {
+        position: relative;
+        top: 19px;
+        left: 30px;
+        bottom: 100px;
+      }
+
+      .absolute {
+        position: absolute;
+        top: 10px;
+        color: red;
+      }
+
+      .fixed {
+        position: fixed;
+        top: 100px;
+        color: aliceblue;
+        background: black;
+      }
+      h1 {
+        padding: 100px 0;
+      }
+
+      .headings > h1 {
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <!-- relative,absolute,static, fixed ,sticky -->
+    <h1>Static Positioning - default position</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      impedit quasi ratione, ipsa recusandae, quod inventore voluptatem hic nemo
+      odit iste iusto, laboriosam sapiente cupiditate repellat corporis.
+      Officia, atque nobis?
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam at
+      praesentium corporis molestiae! Suscipit totam alias laborum inventore
+      accusantium, consequuntur nulla sit repellendus deleniti hic accusamus
+      quae at. Nulla, aliquam.
+    </p>
+
+    <h1>Relative Positioning</h1>
+    <div class="relative">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est consectetur
+      illum, voluptate corrupti voluptas maxime ut mollitia sit asperiores,
+      expedita perspiciatis rerum consequuntur eveniet voluptatem aut in
+      corporis magni nemo.
+      <p class="absolute">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta
+        error ad dicta expedita beatae, unde doloribus quas repellendus ut odio
+        magnam officia ipsa a aut mollitia tempore minima aliquid?
+      </p>
+    </div>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam at
+      praesentium corporis molestiae! Suscipit totam alias laborum inventore
+      accusantium, consequuntur nulla sit repellendus deleniti hic accusamus
+      quae at. Nulla, aliquam.
+    </p>
+    <h1>Absolute Positioning</h1>
+
+    <p>I am after the absolute p tag</p>
+    <p class="absolute">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta
+      error ad dicta expedita beatae, unde doloribus quas repellendus ut odio
+      magnam officia ipsa a aut mollitia tempore minima aliquid?
+    </p>
+
+    <h1>Fixed Positioning</h1>
+
+    <!-- <p class="fixed">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eius optio
+      voluptates adipisci. Sapiente quod debitis nisi soluta tempore, quo
+      voluptates quaerat non molestiae exercitationem possimus voluptatem
+      officiis similique consectetur!
+    </p> -->
+    <p class="fixed">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eius optio
+      voluptates adipisci. Sapiente quod debitis nisi soluta tempore, quo
+      voluptates quaerat non molestiae exercitationem possimus voluptatem
+      officiis similique consectetur!
+    </p>
+    <h1>Sticky positioning</h1>
+    <div class="headings">
+      <h1>Heading 1</h1>
+      <h1>Heading 2</h1>
+      <h1>Heading 3</h1>
+      <h1>Heading 4</h1>
+      <h1>Heading 5</h1>
+      <h1>Heading 6</h1>
+    </div>
+  </body>
 </html>
