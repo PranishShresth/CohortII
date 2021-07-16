@@ -89,6 +89,41 @@
         height: 400px;
         margin: 30px 0;
       }
+      /* filters*/
+      .ft {
+        width: 400px;
+        height: 400px;
+        background: url("https://images.unsplash.com/photo-1517249361621-f11084eb8e28?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmF0bWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+        background-repeat: no-repeat;
+        margin: 2rem 0;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      /* blur takes px values*/
+      .filter1 {
+        filter: blur(5px);
+      }
+      /*greyscale 0 -100%*/
+      .filter2 {
+        filter: grayscale(100%);
+      }
+
+      /*opacity 0 -1*/
+
+      .filter3 {
+        filter: opacity(0.5);
+      }
+      /*hue rotate deg*/
+
+      .filter4 {
+        filter: hue-rotate(90deg);
+      }
+      /*invert  0- 100%*/
+
+      .filter5 {
+        filter: invert(80%);
+      }
     </style>
   </head>
   <body>
@@ -190,6 +225,9 @@
       <div class="ft filter2"></div>
       <div class="ft filter3"></div>
       <div class="ft filter4"></div>
+      <div class="ft filter5"></div>
+      <div class="ft filter6"></div>
+      <div class="ft filter7"></div>
     </section>
   </body>
 </html>
