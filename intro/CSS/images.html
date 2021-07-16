@@ -43,6 +43,18 @@
         height: 200px;
         clip-path: circle(30% at 50% 50%);
       }
+
+      .pos {
+        object-position: 20px -40px;
+      }
+
+      .contain {
+        object-fit: contain;
+      }
+
+      .cover {
+        object-fit: cover;
+      }
     </style>
   </head>
   <body>
@@ -123,6 +135,43 @@
         );
       "
       class="image3"
+      src="https://images.unsplash.com/photo-1626327547387-b2663804dd50?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+    />
+    <img
+      style="
+        clip-path: polygon(
+          20% 0%,
+          0% 20%,
+          14% 53%,
+          31% 74%,
+          44% 93%,
+          50% 100%,
+          57% 93%,
+          72% 75%,
+          87% 51%,
+          100% 20%,
+          80% 0%,
+          50% 30%
+        );
+      "
+      class="image3"
+      src="https://images.unsplash.com/photo-1626327547387-b2663804dd50?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+    />
+
+    <h1>Positioning</h1>
+    <img
+      class="image3 pos"
+      src="https://images.unsplash.com/photo-1626327547387-b2663804dd50?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+    />
+
+    <h1>Contain</h1>
+    <img
+      class="image3 contain"
+      src="https://images.unsplash.com/photo-1626327547387-b2663804dd50?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+    />
+    <h1>Cover</h1>
+    <img
+      class="image3 cover"
       src="https://images.unsplash.com/photo-1626327547387-b2663804dd50?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
     />
   </body>
