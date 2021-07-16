@@ -124,6 +124,20 @@
       .filter5 {
         filter: invert(80%);
       }
+      /*sepia 0- 100%*/
+
+      .filter6 {
+        filter: sepia(100%) hue-rotate(45deg);
+      }
+
+      .filter7 {
+        filter: saturate(90%) contrast(60%) brightness(60%);
+      }
+      /*use svg filter to add your own filter*/
+
+      .filter8 {
+        filter: url("./12.svg");
+      }
     </style>
   </head>
   <body>
@@ -228,6 +242,7 @@
       <div class="ft filter5"></div>
       <div class="ft filter6"></div>
       <div class="ft filter7"></div>
+      <div class="ft filter8"></div>
     </section>
   </body>
 </html>
