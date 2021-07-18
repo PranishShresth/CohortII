@@ -5,8 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>List, Forms and Table</title>
+    <style>
+      .input_1 {
+        padding: 8px;
+
+        margin: 20px 0;
+        border: 1px solid #ccc;
+        border-radius: 9999px;
+        outline: 0;
+        background-color: #f9f9f9;
+      }
+
+      .btn {
+        padding: 2px 40px;
+      }
+    </style>
   </head>
   <body>
-    <form></form>
+    <form>
+      <fieldset>
+        <legend>User Registration Form</legend>
+        <!-- field set -->
+        <div>
+          <label for="username">Username</label>
+          <input type="text" id="username" class="input_1" />
+        </div>
+        <div>
+          <label for="password">Password</label>
+
+          <input type="password" class="input_1" id="password" />
+        </div>
+        <div>
+          <label for="hobby">Hobby</label>
+
+          <input type="text" id="hobby" class="input_1" />
+        </div>
+        <div>
+          <label for="interest">interest</label>
+          <input type="text" class="input_1" />
+        </div>
+        <div>
+          <button class="btn">Submit</button>
+        </div>
+      </fieldset>
+    </form>
   </body>
 </html>
