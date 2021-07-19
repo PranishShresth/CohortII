@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* header  */
+.site_header {
+  float: left;
+}
+.navigation_bar {
+  float: right;
+}
+
+.navigation_bar ul {
+  list-style: none;
+}
+
+.navigation_bar ul > li {
+  display: inline;
+}
