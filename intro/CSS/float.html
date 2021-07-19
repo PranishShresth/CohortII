@@ -18,8 +18,19 @@
       .floatRight {
         float: right;
       }
+
+      .floatRight::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
       .clearFix {
         clear: both;
+      }
+
+      article > section {
+        float: left;
+        width: 50%;
       }
     </style>
   </head>
@@ -39,5 +50,25 @@
       recusandae cupiditate accusamus, ea quisquam! Quos tempora, totam
       inventore labore obcaecati libero?
     </p>
+    <article>
+      <section>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+        quisquam necessitatibus enim quibusdam earum facilis, harum ab magnam
+        porro explicabo incidunt dolorem numquam cum rerum dolore, alias
+        cupiditate aut placeat.
+      </section>
+      <section>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+        quisquam necessitatibus enim quibusdam earum facilis, harum ab magnam
+        porro explicabo incidunt dolorem numquam cum rerum dolore, alias
+        cupiditate aut placeat.
+      </section>
+      <section>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+        perspiciatis corporis iusto tenetur consequatur! Repudiandae
+        dignissimos, pariatur enim libero non nisi suscipit repellendus ab eos
+        quos consequatur unde aperiam sint?
+      </section>
+    </article>
   </body>
 </html>
