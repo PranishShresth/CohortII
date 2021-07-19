@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form">
+      <input type="time" id="appt" name="appt" required />
+      <button type="submit">Set alarm</button>
+    </form>
+    <div id="alarm2"></div>
+
+    <div id="alarm"></div>
+    <script>
+      var date = new Date().toLocaleTimeString();
+      var alarm;
+      let al = document.getElementById("alarm");
+      let al2 = document.getElementById("alarm2");
+
+      document.getElementById("form").addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        let val = document.getElementById("appt").value;
+        alarm = val;
+        al2.textContent = val;
+      });
+      setInterval(() => {
+        var date = new Date().toLocaleTimeString("en-us", { hour12: false });
+        al.textContent = date;
+        var time = date.split(":");
+        var curr = time[0] + ":" + time[1];
+        if (curr === alarm) {
+          console.log("hello");
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
