@@ -30,7 +30,36 @@
 
       article > section {
         float: left;
-        width: 50%;
+        width: 30.333%;
+        padding: 4px;
+      }
+
+      /* media queries*/
+      /* extra small screens,small screens, large screens, medium screens ,extra large screesn*/
+
+      /* less than*/
+
+      @media print {
+      }
+      @media screen and (max-width: 500px) {
+        body {
+          background-color: aliceblue;
+          font-size: 12px;
+        }
+        article > section {
+          float: left;
+          width: 100%;
+          padding: 4px;
+          text-align: justify;
+        }
+      }
+
+      /* more than than*/
+
+      @media (min-width: 500px) {
+        body {
+          background-color: beige;
+        }
       }
     </style>
   </head>
@@ -70,5 +99,13 @@
         quos consequatur unde aperiam sint?
       </section>
     </article>
+    <section class="clearFix"></section>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorem
+      itaque, sequi fugiat corporis molestias in maxime? Ipsam nesciunt ducimus
+      deleniti earum molestias, consectetur, vel, eveniet non veniam unde
+      labore.
+    </p>
   </body>
 </html>
