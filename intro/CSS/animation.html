@@ -68,6 +68,12 @@
         animation: scaleIn 2s linear;
         animation-iteration-count: 1;
       }
+
+      .animation6 {
+        animation-name: leftToRight;
+        animation-duration: 20s;
+        animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+      }
       @keyframes scaleIn {
         0% {
           transform: scale(0);
@@ -87,6 +93,22 @@
           background-color: aqua;
         }
       }
+
+      .animation7 {
+        animation: expandOut 1s linear;
+      }
+      @keyframes expandOut {
+        0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
     </style>
   </head>
   <body>
@@ -96,6 +118,8 @@
     <div class="animation3"></div>
     <div class="animation4"></div>
     <div class="animation5"></div>
+    <div class="animation6"></div>
+    <h1 class="animation7">THS_Cohort_II</h1>
     <marquee>Hello World</marquee>
   </body>
 </html>
