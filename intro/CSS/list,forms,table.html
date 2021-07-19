@@ -17,7 +17,30 @@
       }
 
       .btn {
-        padding: 2px 40px;
+        padding: 8px 40px;
+        background-color: cornflowerblue;
+        color: white;
+        font-weight: 700;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        border-radius: 9999px;
+      }
+
+      td,
+      th {
+        padding: 0.4em;
+        border: 1px solid #ccc;
+      }
+      td:hover {
+        background-color: #ccc;
+      }
+      th {
+        text-transform: uppercase;
+        text-align: left;
+        background-color: grey;
+        color: white;
+        letter-spacing: 0.1em;
+        border-bottom: 1px solid black;
       }
     </style>
   </head>
@@ -32,7 +55,6 @@
         </div>
         <div>
           <label for="password">Password</label>
-
           <input type="password" class="input_1" id="password" />
         </div>
         <div>
@@ -49,5 +71,32 @@
         </div>
       </fieldset>
     </form>
+    <!-- Tables -->
+    <table>
+      <thead>
+        <tr>
+          <th>Book</th>
+          <th>Author</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Othello</td>
+          <td>Shakespeare</td>
+        </tr>
+        <tr>
+          <td>Harry Potter</td>
+          <td>JK Rowling</td>
+        </tr>
+        <tr>
+          <td>Coding Algos</td>
+          <td>Param</td>
+        </tr>
+        <tr>
+          <td>Dazzchella</td>
+          <td>Dazz</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
