@@ -45,6 +45,37 @@
           transform: translateX(500px);
         }
       }
+      @keyframes bounce {
+        0% {
+          transform: translateX(0);
+          background-color: aqua;
+        }
+        50% {
+          transform: translateX(500px);
+          background-color: rgb(212, 0, 255);
+        }
+        100% {
+          transform: translateX(0);
+          background-color: aqua;
+        }
+      }
+      .animation4 {
+        animation: bounce 2s linear;
+        animation-iteration-count: 2;
+      }
+
+      .animation5 {
+        animation: scaleIn 2s linear;
+        animation-iteration-count: 1;
+      }
+      @keyframes scaleIn {
+        0% {
+          transform: scale(0);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
       @keyframes colorChange {
         0% {
           background-color: antiquewhite;
@@ -63,5 +94,8 @@
     <div class="animation1"></div>
     <div class="animation2"></div>
     <div class="animation3"></div>
+    <div class="animation4"></div>
+    <div class="animation5"></div>
+    <marquee>Hello World</marquee>
   </body>
 </html>
