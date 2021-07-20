@@ -4,9 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Blog | About</title>
+    <link href="./styles/style.css" rel="stylesheet" />
   </head>
   <body>
-    About
+    <div class="content_wrapper">
+      <header>
+        <nav>
+          <div class="site_header">
+            <a href="#" class="nav_link">Blog</a>
+          </div>
+          <div class="navigation_bar">
+            <ul>
+              <li><a href="#" class="nav_link">Home</a></li>
+              <li><a href="./contact.html" class="nav_link">Contact</a></li>
+              <li><a href="./about.html" class="nav_link">About</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="clearFix"></div>
+      <main></main>
+    </div>
+    <footer>
+      <div class="content_wrapper">
+        <h3>Blog &copy;</h3>
+        <div class="footerContainer">
+          <div class="footer_column">
+            <p>Subscribe to Newsletter</p>
+            <form>
+              <input
+                type="text"
+                placeholder="Enter your email"
+                id="subscribe_input"
+              />
+              <button class="btn subscribe_btn">Subscribe</button>
+            </form>
+          </div>
+          <div class="footer_column">
+            <p>Information</p>
+            <div><a href="#">About</a></div>
+            <div><a href="#">Liscense</a></div>
+            <div><a href="#">Terms and Condition</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
