@@ -12,14 +12,14 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 a {
   text-decoration: none;
   color: black;
 }
 .content_wrapper {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -33,7 +33,7 @@ a {
 nav {
   position: fixed;
   padding: 1rem 0;
-  width: 80%;
+  width: 90%;
   top: 0;
   background-color: white;
   border-bottom: 1px solid var(--textSecondary);
@@ -73,8 +73,19 @@ main {
 .hero_desc {
   text-align: justify;
 }
-.hero_author {
+.blog_author {
   text-transform: uppercase;
   color: var(--textPrimary);
   font-size: 12px;
+}
+
+/* blogContainer */
+
+.blogContainer > .blog {
+  float: left;
+  width: 50%;
+  padding: 10px 10px 10px 0;
+}
+.blog_image img {
+  height: 200px;
 }
