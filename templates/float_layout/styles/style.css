@@ -46,7 +46,9 @@ nav {
 .navigation_bar {
   float: right;
 }
-
+.hamburger_menu {
+  display: none;
+}
 .navigation_bar ul {
   list-style: none;
 }
@@ -131,10 +133,29 @@ footer h3 {
   margin-top: 5px;
 }
 
+@media (max-width: 576px) {
+  .blogContainer > .blog,
+  .footerContainer > div {
+    width: 100%;
+  }
+  .footer_column:nth-child(2) {
+    padding: 1rem 0;
+  }
+  .navigation_bar {
+    display: none;
+  }
+  .hamburger_menu {
+    display: block;
+    float: right;
+  }
+}
 @media (min-width: 992px) {
   .content_wrapper,
   nav {
     width: 80%;
+  }
+  .hero_right {
+    padding-left: 1.5rem;
   }
   .heroContainer > div {
     width: 50%;
