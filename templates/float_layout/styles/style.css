@@ -89,3 +89,21 @@ main {
 .blog_image img {
   height: 200px;
 }
+
+/* footer */
+footer {
+  background-color: #141414;
+  color: var(--textSecondary);
+  padding: 3rem 0;
+  overflow: auto;
+}
+footer h3 {
+  padding: 1rem 0;
+}
+.footer_column a {
+  color: var(--textSecondary);
+}
+.footerContainer > div {
+  float: left;
+  width: 30%;
+}
