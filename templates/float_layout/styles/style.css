@@ -46,9 +46,7 @@ nav {
 .navigation_bar {
   float: right;
 }
-.hamburger_menu {
-  display: none;
-}
+
 .navigation_bar ul {
   list-style: none;
 }
@@ -134,19 +132,15 @@ footer h3 {
 }
 
 @media (max-width: 576px) {
+  .hero_left img {
+    height: 260px;
+  }
   .blogContainer > .blog,
   .footerContainer > div {
     width: 100%;
   }
   .footer_column:nth-child(2) {
     padding: 1rem 0;
-  }
-  .navigation_bar {
-    display: none;
-  }
-  .hamburger_menu {
-    display: block;
-    float: right;
   }
 }
 @media (min-width: 992px) {
