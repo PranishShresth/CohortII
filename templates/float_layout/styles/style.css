@@ -111,6 +111,9 @@ footer h3 {
 .footer_column:nth-child(2) {
   padding-left: 1.4rem;
 }
+.footer_column:nth-child(2) > div {
+  padding: 2px 0;
+}
 .footer_column > p {
   margin: 10px 0;
 }
@@ -119,4 +122,28 @@ footer h3 {
   width: 100%;
   padding: 8px;
   outline: none;
+}
+.btn {
+  padding: 8px;
+  border: 0;
+}
+.subscribe_btn {
+  margin-top: 5px;
+}
+
+@media (min-width: 992px) {
+  .content_wrapper,
+  nav {
+    width: 80%;
+  }
+  .heroContainer > div {
+    width: 50%;
+    float: left;
+  }
+  .blogContainer > .blog {
+    width: 33.33333%;
+  }
+  .blog_image img {
+    height: 250px;
+  }
 }
