@@ -64,7 +64,6 @@ main {
   height: 400px;
 }
 .heroContainer > div {
-  float: left;
   width: 100%;
 }
 .hero_right > * {
