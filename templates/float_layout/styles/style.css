@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
+  --textPrimary: #666;
   --textSecondary: #e6e6e6;
 }
 * {
@@ -34,6 +35,7 @@ nav {
   padding: 1rem 0;
   width: 80%;
   top: 0;
+  background-color: white;
   border-bottom: 1px solid var(--textSecondary);
 }
 .nav_link {
@@ -64,4 +66,16 @@ main {
 .heroContainer > div {
   float: left;
   width: 100%;
+}
+.hero_right > * {
+  padding: 0.4rem 0;
+}
+
+.hero_desc {
+  text-align: justify;
+}
+.hero_author {
+  text-transform: uppercase;
+  color: var(--textPrimary);
+  font-size: 12px;
 }
