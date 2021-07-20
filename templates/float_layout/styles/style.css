@@ -107,3 +107,16 @@ footer h3 {
   float: left;
   width: 30%;
 }
+
+.footer_column:nth-child(2) {
+  padding-left: 1.4rem;
+}
+.footer_column > p {
+  margin: 10px 0;
+}
+
+#subscribe_input {
+  width: 100%;
+  padding: 8px;
+  outline: none;
+}
