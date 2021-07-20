@@ -13,6 +13,8 @@
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.4;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 a {
   text-decoration: none;
@@ -146,7 +148,9 @@ footer h3 {
 @media (min-width: 992px) {
   .content_wrapper,
   nav {
-    width: 80%;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
   }
   .hero_right {
     padding-left: 1.5rem;
