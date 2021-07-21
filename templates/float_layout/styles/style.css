@@ -128,9 +128,40 @@ footer h3 {
 .btn {
   padding: 8px;
   border: 0;
+  cursor: pointer;
+  outline: none;
 }
 .subscribe_btn {
   margin-top: 5px;
+}
+
+/* contact page */
+.contactContainer {
+  height: 500px;
+  padding: 4rem 0;
+}
+.contactContainer > div {
+  float: left;
+  width: 50%;
+  padding: 8px;
+}
+.contact_input {
+  outline: none;
+  border: 0;
+  padding: 0.5rem;
+  background-color: var(--textSecondary);
+  margin: 8px 0;
+  width: 100%;
+}
+.contact_textarea {
+  resize: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact_btn {
+  background-color: #141414;
+  color: var(--textSecondary);
+  padding: 10px 50px;
 }
 
 @media (max-width: 576px) {
