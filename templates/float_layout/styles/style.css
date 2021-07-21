@@ -168,9 +168,15 @@ footer h3 {
   .hero_left img {
     height: 260px;
   }
+
+  .contactContainer {
+    padding: 2rem 0;
+  }
   .blogContainer > .blog,
-  .footerContainer > div {
+  .footerContainer > div,
+  .contactContainer > div {
     width: 100%;
+    padding: 1rem 0;
   }
   .footer_column:nth-child(2) {
     padding: 1rem 0;
@@ -179,8 +185,7 @@ footer h3 {
 @media (min-width: 992px) {
   .content_wrapper,
   nav {
-    width: 100%;
-    max-width: 1400px;
+    width: 80%;
     margin: 0 auto;
   }
   .hero_right {
