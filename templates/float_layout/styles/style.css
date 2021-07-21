@@ -28,6 +28,10 @@ a {
 .clearFix {
   clear: both;
 }
+
+section {
+  padding: 1rem 0;
+}
 /* header  */
 .site_header {
   float: left;
@@ -181,6 +185,15 @@ footer h3 {
   width: 50%;
   padding: 1.5rem 1.5rem 1.5rem 0;
 }
+.team .team_name {
+  font-weight: 700;
+}
+
+.team .team_position {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--textPrimary);
+}
 @media (max-width: 576px) {
   .hero_left img {
     height: 260px;
@@ -191,7 +204,8 @@ footer h3 {
   }
   .blogContainer > .blog,
   .footerContainer > div,
-  .contactContainer > div {
+  .contactContainer > div,
+  .teamContainer > .team {
     width: 100%;
     padding: 1rem 0;
   }
@@ -200,6 +214,9 @@ footer h3 {
   }
 }
 @media (min-width: 992px) {
+  .aboutContainer > p {
+    width: 60%;
+  }
   .content_wrapper,
   nav {
     width: 80%;
