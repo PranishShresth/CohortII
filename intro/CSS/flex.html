@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      .parent {
+        display: flex;
+      }
+      .child {
+        width: 100px;
+        height: 100px;
+        background: #000;
+        margin: 10px;
+      }
+
+      .child1,
+      .child2,
+      .child3 {
+        width: 100px;
+        height: 100px;
+        background: #000;
+      }
+      .parent1,
+      .parent2,
+      .parent3,
+      .parent4,
+      .parent5,
+      .parent6 {
+        height: 200px;
+        background-color: antiquewhite;
+        display: flex;
+        /* horizantal axis*/
+        justify-content: space-around;
+        /* vertical axis*/
+        align-items: center;
+      }
+
+      .parent2 {
+        justify-content: space-between;
+      }
+
+      .parent3 {
+        justify-content: space-evenly;
+      }
+
+      .parent4 {
+        justify-content: center;
+      }
+
+      .parent5 {
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+
+      .parent6 {
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      .parent7 {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+
+      /* flex child property*/
+      .parent8 {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .child8 {
+        flex-basis: 25%;
+        height: 200px;
+        flex-grow: 1;
+        background-color: bisque;
+      }
+
+      .child8:nth-child(1) {
+        background-color: red;
+        flex-grow: 3;
+      }
+
+      .parent9 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px;
+        height: 200px;
+      }
+      .child9:nth-child(1) {
+        background-color: aqua;
+        flex-basis: 50%;
+
+        flex-shrink: 1;
+      }
+      .child9:nth-child(2) {
+        background-color: red;
+        flex-basis: 200px;
+
+        flex-shrink: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex</h1>
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    <h1>Justify content - space around</h1>
+    <div class="parent1">
+      <div class="child1"></div>
+      <div class="child1"></div>
+      <div class="child1"></div>
+    </div>
+    <h1>Justify content - space between</h1>
+
+    <div class="parent2">
+      <div class="child2"></div>
+
+      <div class="child2"></div>
+    </div>
+    <h1>Justify content - space evenly</h1>
+
+    <div class="parent3">
+      <div class="child3"></div>
+      <div class="child3"></div>
+
+      <div class="child3"></div>
+    </div>
+    <h1>Justify content - center</h1>
+
+    <div class="parent4">
+      <div class="child3"></div>
+      <div class="child3"></div>
+
+      <div class="child3"></div>
+    </div>
+    <h1>Justify content - flex end, Align items -flex end</h1>
+
+    <div class="parent5">
+      <div class="child3"></div>
+      <div class="child3"></div>
+
+      <div class="child3"></div>
+    </div>
+    <h1>Justify content - flex start, Align items -flex start</h1>
+
+    <div class="parent6">
+      <div class="child3"></div>
+      <div class="child3"></div>
+
+      <div class="child3"></div>
+    </div>
+    <h1>Flex Wrap and use gap</h1>
+    <div class="parent7">
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2" style="color: red">Last Child</div>
+    </div>
+    <h1>Flex child property - flex basis</h1>
+    <div class="parent8">
+      <div class="child8"></div>
+      <div class="child8"></div>
+      <div class="child8"></div>
+      <div class="child8"></div>
+      <div class="child8"></div>
+      <div class="child8"></div>
+      <div class="child8"></div>
+      <div class="child8"></div>
+      <div class="child8"></div>
+      <div class="child8"></div>
+      <div class="child8"></div>
+      <div class="child8"></div>
+      <div class="child8"></div>
+    </div>
+    <h1>Flex Grow and flex shrink</h1>
+    <div class="parent9">
+      <div class="child9"></div>
+      <div class="child9"></div>
+    </div>
+  </body>
+</html>
