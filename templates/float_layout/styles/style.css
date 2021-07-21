@@ -175,6 +175,12 @@ footer h3 {
   line-height: 1.6em;
   word-spacing: 0.4em;
 }
+
+.teamContainer > .team {
+  float: left;
+  width: 50%;
+  padding: 1.5rem 1.5rem 1.5rem 0;
+}
 @media (max-width: 576px) {
   .hero_left img {
     height: 260px;
@@ -206,9 +212,11 @@ footer h3 {
     width: 50%;
     float: left;
   }
-  .blogContainer > .blog {
+  .blogContainer > .blog,
+  .teamContainer > .team {
     width: 33.33333%;
   }
+
   .blog_image img {
     height: 250px;
   }
