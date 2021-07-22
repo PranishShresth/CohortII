@@ -95,3 +95,14 @@ ul {
 .heading_btn {
   padding: 15px 20px;
 }
+
+/* section 1 */
+
+.missionContainer {
+  display: flex;
+  gap: 10px;
+}
+.missionContainer > div {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
