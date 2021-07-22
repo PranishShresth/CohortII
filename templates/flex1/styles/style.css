@@ -18,9 +18,15 @@ h5,
 h6 {
   font-family: "Montserrat", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   line-height: 1.6em;
   font-family: "Open Sans", sans-serif;
+  max-width: 1940px;
+  margin: 0 auto;
 }
 
 a {
@@ -111,6 +117,10 @@ section {
 #section4 {
   background-color: var(--sectionColor);
 }
+
+#section4 {
+  padding: 8rem 0;
+}
 .missionContainer {
   display: flex;
   gap: 10px;
@@ -196,11 +206,23 @@ footer a {
   gap: 20px;
 }
 
+@media (min-height: 992px) {
+  .landingHeader {
+    height: calc(100vh - 400px);
+  }
+}
+@media (min-height: 1200px) {
+  .landingHeader {
+    height: calc(100vh - 700px);
+  }
+}
+
 @media (min-width: 992px) {
   .missionContainer {
     flex-wrap: nowrap;
     gap: 30px;
   }
+
   .missionContainer > div {
     flex: 0 0 50%;
     max-width: 50%;
