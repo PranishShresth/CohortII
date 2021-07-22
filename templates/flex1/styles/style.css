@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
 :root {
   --greyishColor: #a6a8a1;
+  --sectionColor: #f7f7f7;
 }
 * {
   padding: 0;
@@ -101,7 +102,10 @@ section {
 }
 
 /* section 1 */
-
+#section1,
+#section4 {
+  background-color: var(--sectionColor);
+}
 .missionContainer {
   display: flex;
   gap: 10px;
@@ -166,4 +170,6 @@ section {
 .subscribe_input {
   padding: 10px 20px;
   width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
 }
