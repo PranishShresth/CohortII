@@ -173,3 +173,14 @@ section {
   border: 1px solid #ccc;
   outline: none;
 }
+
+/* footer */
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_right {
+  display: flex;
+  gap: 20px;
+}
