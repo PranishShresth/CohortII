@@ -228,4 +228,12 @@ footer a {
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .footerContainer,
+  .footer_right {
+    flex-direction: column;
+  }
+
+  .footer_right {
+    padding: 20px 0;
+  }
 }
