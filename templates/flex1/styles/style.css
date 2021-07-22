@@ -22,7 +22,9 @@ body {
 a {
   text-decoration: none;
 }
-
+ul {
+  list-style: none;
+}
 /* header */
 .landingHeader {
   background-image: url("../images/bg2.jpg");
@@ -30,5 +32,11 @@ a {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+.header_link {
   color: white;
+}
+.navigationContainer {
+  display: flex;
+  justify-content: space-between;
 }
