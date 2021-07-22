@@ -27,6 +27,9 @@ a {
 ul {
   list-style: none;
 }
+section {
+  padding: 4rem 0;
+}
 
 .btn {
   padding: 10px 20px;
@@ -47,6 +50,7 @@ ul {
   width: 80%;
   margin: 0 auto;
 }
+
 /* header */
 .landingHeader {
   background-image: url("../images/bg2.jpg");
@@ -101,8 +105,13 @@ ul {
 .missionContainer {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+  text-align: justify;
 }
 .missionContainer > div {
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.mission_left p {
+  font-weight: 700;
 }
