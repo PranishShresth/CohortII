@@ -148,3 +148,9 @@ section {
   background-size: cover;
   height: 400px;
 }
+
+/* section 4 */
+.subscribeContainer {
+  display: flex;
+  justify-content: center;
+}
