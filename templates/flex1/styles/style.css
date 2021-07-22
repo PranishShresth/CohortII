@@ -2,6 +2,7 @@
 :root {
   --greyishColor: #a6a8a1;
   --sectionColor: #f7f7f7;
+  --footerColor: #38363b;
 }
 * {
   padding: 0;
@@ -175,7 +176,13 @@ section {
 }
 
 /* footer */
-
+footer {
+  background-color: var(--footerColor);
+  color: white;
+}
+footer a {
+  color: white;
+}
 .footerContainer {
   display: flex;
   justify-content: space-between;
