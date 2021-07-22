@@ -25,6 +25,20 @@ a {
 ul {
   list-style: none;
 }
+
+.btn {
+  padding: 10px 20px;
+  outline: none;
+  border: 0;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  font-weight: 700;
+  cursor: pointer;
+}
+.content_wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
 /* header */
 .landingHeader {
   background-image: url("../images/bg2.jpg");
@@ -32,6 +46,7 @@ ul {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
 }
 .header_link {
   color: white;
@@ -39,4 +54,17 @@ ul {
 .navigationContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 0;
+}
+.site_header .main_link {
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+}
+.navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
