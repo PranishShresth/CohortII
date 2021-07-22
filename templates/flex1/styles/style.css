@@ -73,6 +73,10 @@ section {
 
   padding: 1rem 0;
 }
+.hamburger_menu {
+  display: none;
+  cursor: pointer;
+}
 .site_header .main_link {
   font-weight: 800;
   font-size: 1.4rem;
@@ -190,4 +194,24 @@ footer a {
 .footer_right {
   display: flex;
   gap: 20px;
+}
+
+@media (min-width: 992px) {
+  .missionContainer {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+  .missionContainer > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 592px) {
+  .navigation {
+    display: none;
+  }
+  .hamburger_menu {
+    display: block;
+  }
 }
