@@ -208,10 +208,24 @@ footer a {
 }
 
 @media (max-width: 592px) {
-  .navigation {
+  section {
+    padding: 2rem 0;
+  }
+  .content_wrapper {
+    width: 90%;
+  }
+  .navigation,
+  .mission_right {
     display: none;
   }
   .hamburger_menu {
     display: block;
+  }
+  .goalContainer {
+    flex-wrap: wrap;
+  }
+  .goalContainer > div {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
