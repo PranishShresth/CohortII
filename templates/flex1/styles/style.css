@@ -139,3 +139,12 @@ section {
   background-size: cover;
   height: 400px;
 }
+
+#section3 .goalContainer {
+  flex-direction: row-reverse;
+}
+.section3_goal_right {
+  background: url("../images/section_3.jpg") center center no-repeat;
+  background-size: cover;
+  height: 400px;
+}
