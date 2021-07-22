@@ -115,3 +115,27 @@ section {
 .mission_left p {
   font-weight: 700;
 }
+
+/* section 3 */
+
+.goalContainer {
+  display: flex;
+  gap: 20px;
+}
+.goalContainer > div {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.goal_left {
+  align-self: center;
+}
+.goal_left > p {
+  padding: 1rem 0;
+  width: 80%;
+}
+.goal_right {
+  background: url("../images/section_2.jpg") center center no-repeat;
+  background-size: cover;
+  height: 400px;
+}
