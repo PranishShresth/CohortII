@@ -153,4 +153,17 @@ section {
 .subscribeContainer {
   display: flex;
   justify-content: center;
+  text-align: center;
+}
+
+.subscribeContainer p {
+  padding: 1rem 0;
+}
+.subscribeContainer form {
+  display: flex;
+  gap: 10px;
+}
+.subscribe_input {
+  padding: 10px 20px;
+  width: 100%;
 }
