@@ -56,6 +56,12 @@ section {
 
 /* navigation */
 
+.background {
+  background: url("../images/banner-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .navigationBar {
   display: flex;
   justify-content: space-between;
@@ -71,9 +77,22 @@ section {
   font-size: 20px;
 }
 
+/* hero section */
+
+.heroContainer > div {
+  padding: 1rem 0;
+}
+
+.hero_left button {
+  margin-right: 10px;
+}
 .hero_left h2 {
   font-size: 50px;
   line-height: 52px;
+}
+
+.hero_left p {
+  padding: 2rem 0;
 }
 .hero__position {
   color: var(--primaryColor);
