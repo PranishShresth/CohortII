@@ -27,10 +27,34 @@ header {
   font-family: "Vollkorn", serif;
   padding: 0.8rem 0;
 }
+
+section {
+  padding: 2rem 0;
+}
 .content_wrapper {
   width: 95%;
   margin: 0 auto;
 }
+
+.btn {
+  padding: 10px 25px;
+  border: 0;
+  outline: none;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.primary_btn {
+  background-color: var(--primaryColor);
+  color: white;
+}
+
+.secondary_btn {
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+}
+
+/* navigation */
 
 .navigationBar {
   display: flex;
@@ -45,4 +69,12 @@ header {
 }
 .site_hamburger {
   font-size: 20px;
+}
+
+.hero_left h2 {
+  font-size: 50px;
+  line-height: 52px;
+}
+.hero__position {
+  color: var(--primaryColor);
 }
