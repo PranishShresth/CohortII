@@ -54,6 +54,12 @@ section {
   color: var(--primaryColor);
 }
 
+.section_heading {
+  font-size: 2rem;
+  color: var(--primaryColor);
+  padding: 0.5rem 0;
+}
+
 /* navigation */
 
 .background {
