@@ -103,3 +103,29 @@ section {
 .hero__position {
   color: var(--primaryColor);
 }
+
+/* projects */
+
+.project {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  text-align: center;
+  position: relative;
+}
+.project .project_links {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+}
+.project .project_links a {
+  color: white;
+  font-size: 25px;
+  padding: 0 8px;
+}
+/* .project p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+} */
