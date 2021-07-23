@@ -105,7 +105,9 @@ section {
 }
 
 /* projects */
-
+#projects {
+  background-color: var(--secondaryColor);
+}
 .project {
   margin: 1rem 0;
   font-size: 1.2rem;
@@ -144,6 +146,6 @@ section {
 }
 
 .skills_right .skill_text:hover {
-  color: #f9f9f9;
-  background-color: #2b00d4;
+  color: var(--secondaryColor);
+  background-color: var(--primaryColor);
 }
