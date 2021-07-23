@@ -122,6 +122,7 @@ section {
   font-size: 25px;
   padding: 0 8px;
 }
+
 /* .project p {
   position: absolute;
   top: 50%;
@@ -129,3 +130,20 @@ section {
   color: white;
   transform: translate(-50%, -50%);
 } */
+
+/* skills */
+.skills_right .skill_text {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  margin: 10px 10px 10px 0;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+
+.skills_right .skill_text:hover {
+  color: #f9f9f9;
+  background-color: #2b00d4;
+}
