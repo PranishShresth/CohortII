@@ -22,3 +22,27 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.6em;
 }
+
+header {
+  font-family: "Vollkorn", serif;
+  padding: 0.8rem 0;
+}
+.content_wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.navigationBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site_name {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--primaryColor);
+}
+.site_hamburger {
+  font-size: 20px;
+}
