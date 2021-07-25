@@ -181,3 +181,12 @@ a {
   margin: 5px 5px 5px 0;
   border-radius: 9999px;
 }
+
+/* about section */
+.about_left > p {
+  text-align: justify;
+  padding: 0.8rem 0;
+}
+.about_right {
+  display: none;
+}
