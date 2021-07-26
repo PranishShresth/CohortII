@@ -45,6 +45,7 @@ a {
   outline: none;
   font-weight: 700;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .primary_btn {
@@ -261,5 +262,15 @@ a {
   /* about */
   .about_right {
     display: block;
+    align-self: center;
+  }
+  .aboutContainer {
+    display: flex;
+    gap: 20px;
+  }
+
+  .aboutContainer > div {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
