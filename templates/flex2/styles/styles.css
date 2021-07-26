@@ -259,6 +259,10 @@ a {
     max-width: 33.33%;
   }
 
+  .skillsContainer {
+    display: flex;
+    gap: 3rem;
+  }
   /* about */
   .about_right {
     display: block;

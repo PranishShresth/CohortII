@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex order</title>
+    <style>
+      .wrapper {
+        display: flex;
+        gap: 5px;
+      }
+      .wrapper > div {
+        width: 100px;
+        height: 100px;
+        background-color: aliceblue;
+      }
+      .child3 {
+        order: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="child1">1</div>
+      <div class="child2">2</div>
+      <div class="child3">3</div>
+    </div>
+  </body>
+</html>
