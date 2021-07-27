@@ -30,11 +30,23 @@
         gap: 10px;
         grid-template-columns: repeat(3, 200px);
         grid-template-rows: repeat(4, 100px);
-        grid-auto-rows: 200px;
+        grid-auto-rows: 50px;
       }
 
       .child1 {
         background-color: beige;
+      }
+
+      .wrapper2 {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-auto-flow: column;
+        grid-auto-columns: 50px;
+        gap: 10px;
+      }
+      .child2 {
+        background-color: beige;
+        height: 200px;
       }
     </style>
   </head>
@@ -66,6 +78,26 @@
       <div class="child1"></div>
       <div class="child1"></div>
       <div class="child1"></div>
+    </div>
+
+    <h1>Grid auto flow</h1>
+    <div class="wrapper2">
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
+      <div class="child2"></div>
     </div>
   </body>
 </html>
