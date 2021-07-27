@@ -17,9 +17,28 @@
         background-color: aqua;
         height: 100%;
       }
+      .child:nth-child(odd) {
+        background-color: aqua;
+      }
+
+      .child:nth-child(even) {
+        background-color: brown;
+      }
+      /*4 row with 100px each, 3 column with 200px */
+      .wrapper1 {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(4, 100px);
+      }
+
+      .child1 {
+        background-color: beige;
+      }
     </style>
   </head>
   <body>
+    <h1>Grid One - Specifying rows and columns</h1>
     <div class="wrapper">
       <div class="child"></div>
       <div class="child"></div>
@@ -27,6 +46,25 @@
       <div class="child"></div>
       <div class="child"></div>
       <div class="child"></div>
+    </div>
+    <h1>4 rows and 3 columns</h1>
+    <div class="wrapper1">
+      <div class="child1"></div>
+      <div class="child1"></div>
+      <div class="child1"></div>
+      <div class="child1"></div>
+      <div class="child1"></div>
+      <div class="child1"></div>
+      <div class="child1"></div>
+      <div class="child1"></div>
+      <div class="child1"></div>
+      <div class="child1"></div>
+      <div class="child1"></div>
+      <div class="child1"></div>
+      <div class="child1"></div>
+      <div class="child1"></div>
+      <div class="child1"></div>
+      <div class="child1"></div>
     </div>
   </body>
 </html>
