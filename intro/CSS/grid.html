@@ -87,14 +87,14 @@
 
       .wrapper5 {
         display: grid;
-        grid-template-areas: "header header header" "main . aside" "footer footer footer";
+        grid-template-areas: "🤟 🤟 🤟" "main . aside" "footer footer footer";
         grid-template-columns: auto 20px 200px;
         grid-template-rows: 80px auto 80px;
         height: 100vh;
       }
 
       .header {
-        grid-area: header;
+        grid-area: 🤟;
         background-color: tomato;
       }
       .main {
@@ -110,6 +110,39 @@
       .footer {
         grid-area: footer;
         background-color: cadetblue;
+      }
+      .😀 {
+        width: 100px;
+        height: 200px;
+        background-color: red;
+      }
+
+      .wrapper6 {
+        display: grid;
+        grid-template-columns: repeat(5, 200px);
+        grid-template-rows: repeat(5, 200px);
+      }
+
+      .img {
+        grid-row: 2/3;
+        grid-column: 3/4;
+      }
+      .img2 {
+        grid-row: 3/4;
+        grid-column: 2/3;
+      }
+      .img3 {
+        grid-row: 4/5;
+        grid-column: 3/4;
+      }
+      .img4 {
+        grid-row: 5/6;
+        grid-column: -1;
+      }
+
+      .img4 {
+        grid-row: 3/4;
+        grid-column: 5/6;
       }
     </style>
   </head>
@@ -219,13 +252,71 @@
         <h1>Header</h1>
       </div>
       <div class="main">
-        <h1>Main Content</h1>
+        <h1>
+          Main Content
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+            provident suscipit consequatur adipisci nam eligendi quisquam dolor.
+            Saepe consectetur, porro molestias sint, inventore magni id iure at
+            blanditiis magnam ut!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+            provident suscipit consequatur adipisci nam eligendi quisquam dolor.
+            Saepe consectetur, porro molestias sint, inventore magni id iure at
+            blanditiis magnam ut!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+            provident suscipit consequatur adipisci nam eligendi quisquam dolor.
+            Saepe consectetur, porro molestias sint, inventore magni id iure at
+            blanditiis magnam ut!
+          </p>
+        </h1>
       </div>
       <div class="aside">
         <h1>Aside</h1>
       </div>
       <div class="footer">
         <h1>Footer</h1>
+      </div>
+    </div>
+    <div class="😀"></div>
+    <div class="wrapper6">
+      <div class="child6 img">
+        <img
+          src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div class="child6 img2">
+        <img
+          src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG5hdHVyZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div class="child6 img3">
+        <img
+          src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div class="child6 img4">
+        <img
+          src="https://images.unsplash.com/photo-1533910534207-90f31029a78e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZG9udXRzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div class="child6 img5">
+        <img
+          src="https://images.unsplash.com/photo-1505843513577-22bb7d21e455?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1hbnNpb25zfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          width="100%"
+          height="100%"
+        />
       </div>
     </div>
   </body>
