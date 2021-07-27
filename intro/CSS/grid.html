@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid</title>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+      body {
+        font-family: "Caveat", cursive;
+      }
       .wrapper {
         display: grid;
         gap: 10px;
@@ -30,6 +35,8 @@
         gap: 10px;
         grid-template-columns: repeat(3, 200px);
         grid-template-rows: repeat(4, 100px);
+        /* what should we do to automatically created rows?*/
+
         grid-auto-rows: 50px;
       }
 
@@ -50,9 +57,66 @@
         background-color: beige;
         height: 200px;
       }
+
+      .wrapper3 {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+
+        gap: 10px;
+      }
+      .child3 {
+        background-color: tomato;
+        height: 200px;
+      }
+
+      .wrapper4 {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      }
+      .child4 {
+        background-color: cornflowerblue;
+        height: 200px;
+      }
+
+      .auto-fit {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+
+      /* grid template areas*/
+
+      .wrapper5 {
+        display: grid;
+        grid-template-areas: "header header header" "main . aside" "footer footer footer";
+        grid-template-columns: auto 20px 200px;
+        grid-template-rows: 80px auto 80px;
+        height: 100vh;
+      }
+
+      .header {
+        grid-area: header;
+        background-color: tomato;
+      }
+      .main {
+        grid-area: main;
+        background-color: bisque;
+      }
+
+      .aside {
+        grid-area: aside;
+        background-color: burlywood;
+      }
+
+      .footer {
+        grid-area: footer;
+        background-color: cadetblue;
+      }
     </style>
   </head>
   <body>
+    <!-- header   -->
+    <!-- main     aside -->
+    <!-- footer -->
     <h1>Grid One - Specifying rows and columns</h1>
     <div class="wrapper">
       <div class="child"></div>
@@ -100,6 +164,69 @@
       <div class="child2"></div>
       <div class="child2"></div>
       <div class="child2"></div>
+    </div>
+    <h1>Fractional Unit (FR) - fraction of available space</h1>
+    <div class="wrapper3">
+      <div class="child3"></div>
+      <div class="child3"></div>
+      <div class="child3"></div>
+      <div class="child3"></div>
+      <div class="child3"></div>
+      <div class="child3"></div>
+      <div class="child3"></div>
+      <div class="child3"></div>
+      <div class="child3"></div>
+      <div class="child3"></div>
+      <div class="child3"></div>
+      <div class="child3"></div>
+    </div>
+    <h1>Using minmax function and auto-fill vs auto-fit</h1>
+    <h1>Auto fill</h1>
+    <div class="wrapper4">
+      <div class="child4"></div>
+      <div class="child4"></div>
+      <div class="child4"></div>
+      <div class="child4"></div>
+      <div class="child4"></div>
+      <!-- <div class="child4"></div> -->
+      <!-- <div class="child4"></div>
+      <div class="child4"></div>
+      <div class="child4"></div>
+      <div class="child4"></div>
+      <div class="child4"></div>
+      <div class="child4"></div> -->
+    </div>
+    <h1>Auto fit</h1>
+
+    <div class="wrapper4 auto-fit">
+      <div class="child4"></div>
+      <div class="child4"></div>
+      <div class="child4"></div>
+      <div class="child4"></div>
+      <div class="child4"></div>
+      <!-- <div class="child4"></div> -->
+      <!-- <div class="child4"></div>
+        <div class="child4"></div>
+        <div class="child4"></div>
+        <div class="child4"></div>
+        <div class="child4"></div>
+        <div class="child4"></div> -->
+    </div>
+
+    <h1>Grid templates Areas</h1>
+    <div class="wrapper5">
+      <div class="header">
+        <h1>Header</h1>
+      </div>
+      <div class="main">
+        <h1>Main Content</h1>
+      </div>
+      <div class="aside">
+        <h1>Aside</h1>
+      </div>
+      <div class="footer">
+        <h1>Footer</h1>
+      </div>
     </div>
   </body>
 </html>
