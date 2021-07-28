@@ -33,6 +33,11 @@ span.nav_link {
   justify-content: center;
   align-items: center;
 }
+
+.content_wrapper {
+  width: 92%;
+  margin: 0 auto;
+}
 /* container */
 .container {
   display: grid;
@@ -68,7 +73,14 @@ main {
   color: white;
   /* padding: 10px; */
 }
+
 /* .twitter_btn::after {
   content: "\1F589";
   color: white;
 } */
+/* main section */
+.headerContainer {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-between;
+}
