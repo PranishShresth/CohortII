@@ -110,6 +110,19 @@ main {
   width: 100%;
   border: 0;
   outline: none;
-  font-size: 16px;
+  font-size: 18px;
   padding: 14px 0;
+}
+.status_globe {
+  color: var(--primaryColor);
+}
+
+.status_globe span {
+  padding: 0 6px;
+  font-weight: 600;
+}
+
+.status_utility .status__utility__left {
+  display: flex;
+  gap: 10px;
 }
