@@ -84,3 +84,17 @@ main {
   padding: 1rem 0;
   justify-content: space-between;
 }
+
+#home {
+  border-bottom: 1px solid var(--secondaryColor);
+}
+.statusContainer {
+  display: grid;
+  grid-template-columns: 48px auto;
+}
+
+.status_left img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
