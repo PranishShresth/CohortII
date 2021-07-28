@@ -1,0 +1,52 @@
+:root {
+  --primaryColor: rgb(29, 161, 242);
+  --secondaryColor: rgb(235, 230, 240);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6em;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+span.nav_link {
+  display: none;
+}
+
+/* container */
+.container {
+  display: grid;
+  margin: 0 auto;
+  width: 100%;
+  grid-template-columns: 48px auto;
+}
+
+/* nav */
+nav {
+  height: 100vh;
+  justify-self: center;
+}
+main {
+  border-left: 1px solid var(--secondaryColor);
+  border-right: 1px solid var(--secondaryColor);
+}
+.fa-twitter {
+  color: var(--primaryColor);
+  font-size: 20px;
+}
+
+.nav_link {
+  font-size: 20px;
+  padding: 1rem 0;
+}
