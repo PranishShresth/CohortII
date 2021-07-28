@@ -28,7 +28,11 @@ span.nav_link {
   outline: 0;
   border: 0;
 }
-
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* container */
 .container {
   display: grid;
@@ -38,9 +42,9 @@ span.nav_link {
 }
 
 /* nav */
+
 nav {
   height: 100vh;
-  justify-self: center;
 }
 main {
   border-left: 1px solid var(--secondaryColor);
