@@ -24,6 +24,11 @@ span.nav_link {
   display: none;
 }
 
+.btn {
+  outline: 0;
+  border: 0;
+}
+
 /* container */
 .container {
   display: grid;
@@ -49,3 +54,17 @@ main {
   font-size: 20px;
   padding: 1rem 0;
 }
+
+.twitter_btn {
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  background: var(--primaryColor);
+  cursor: pointer;
+  color: white;
+  /* padding: 10px; */
+}
+/* .twitter_btn::after {
+  content: "\1F589";
+  color: white;
+} */
