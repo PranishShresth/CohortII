@@ -245,4 +245,8 @@ main {
     background-color: inherit;
     width: 100%;
   }
+
+  .asideNewsContainer {
+    background-color: var(--lightColor);
+  }
 }
