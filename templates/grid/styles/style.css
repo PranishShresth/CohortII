@@ -33,7 +33,7 @@ span.nav_link {
   border: 0;
 }
 
-.center {
+.nav_flex {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,6 +91,8 @@ main {
 }
 
 #home {
+  font-weight: 800;
+  font-size: 20px;
   border-bottom: 1px solid var(--secondaryColor);
 }
 
@@ -191,4 +193,36 @@ main {
 .tweet__footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+
+@media (min-width: 592px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    grid-template-columns: 250px 576px 250px;
+  }
+  aside {
+    display: block;
+  }
+
+  span.nav_link {
+    display: inline;
+    padding-left: 12px;
+  }
+
+  .nav_flex {
+    justify-content: flex-start;
+  }
 }
