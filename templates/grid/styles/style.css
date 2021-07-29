@@ -1,6 +1,7 @@
 :root {
   --primaryColor: rgb(29, 161, 242);
   --secondaryColor: rgb(235, 230, 240);
+  --lightColor: rgb(239, 243, 244);
 }
 
 * {
@@ -85,7 +86,7 @@ main {
 /* main section */
 .headerContainer {
   display: flex;
-  padding: 1rem 0;
+  padding: 0.4rem 0;
   justify-content: space-between;
 }
 
@@ -113,15 +114,20 @@ main {
   font-size: 14px;
   padding: 14px 0;
 }
+
 .status_globe {
   color: var(--primaryColor);
   padding: 5px 0;
+  display: none;
 }
 
 .status_globe span {
   padding: 0 6px;
   font-weight: 600;
   font-size: 14px;
+}
+#tweet_input:focus + .status_globe {
+  display: block;
 }
 
 .status_utility {
@@ -145,5 +151,44 @@ main {
 }
 .content_border {
   height: 10px;
-  background-color: var(--secondaryColor);
+  background-color: var(--lightColor);
+}
+
+/* tweets */
+
+/*  */
+.tweet_left img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+.tweet {
+  display: grid;
+  grid-template-columns: 48px auto;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--secondaryColor);
+}
+
+.tweet__header {
+  display: flex;
+  justify-content: space-between;
+}
+.tweet__header .tweet__name {
+  font-weight: bold;
+}
+
+.tweet__header .tweet__handle,
+.tweet__header .tweet__timestamp,
+.tweet__header__right {
+  color: grey;
+  font-size: 15px;
+}
+
+.tweet__body img {
+  border-radius: 16px;
+  height: 300px;
+}
+.tweet__footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
