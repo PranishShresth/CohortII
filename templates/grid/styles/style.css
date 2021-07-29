@@ -110,19 +110,40 @@ main {
   width: 100%;
   border: 0;
   outline: none;
-  font-size: 18px;
+  font-size: 14px;
   padding: 14px 0;
 }
 .status_globe {
   color: var(--primaryColor);
+  padding: 5px 0;
 }
 
 .status_globe span {
   padding: 0 6px;
   font-weight: 600;
+  font-size: 14px;
 }
 
+.status_utility {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  border-top: 1px solid var(--secondaryColor);
+}
 .status_utility .status__utility__left {
   display: flex;
+  align-items: center;
   gap: 10px;
+  color: var(--primaryColor);
+}
+.tweet_btn {
+  border-radius: 9999px;
+  color: white;
+  padding: 7px 16px;
+  background: var(--primaryColor);
+  font-weight: 700;
+}
+.content_border {
+  height: 10px;
+  background-color: var(--secondaryColor);
 }
