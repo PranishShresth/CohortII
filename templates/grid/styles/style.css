@@ -211,7 +211,7 @@ main {
 
 @media (min-width: 992px) {
   .container {
-    grid-template-columns: 250px 576px 300px;
+    grid-template-columns: 250px 576px 350px;
   }
   aside {
     display: block;
@@ -233,11 +233,16 @@ main {
     background-color: var(--lightColor);
     border-radius: 9999px;
   }
+  .searchForm:focus-within {
+    border: 1px solid var(--primaryColor);
+    color: var(--primaryColor);
+    background-color: white;
+  }
   .search_input {
     border: 0;
     outline: none;
     font-size: 16px;
-    background-color: var(--lightColor);
+    background-color: inherit;
     width: 100%;
   }
 }
