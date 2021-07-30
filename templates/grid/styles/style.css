@@ -249,4 +249,31 @@ main {
   .asideNewsContainer {
     background-color: var(--lightColor);
   }
+  .asideNews_header {
+    padding: 12px;
+  }
+  .news {
+    display: flex;
+    padding: 12px;
+    gap: 5px;
+  }
+
+  .news .news_left .news__body {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.3;
+  }
+
+  .news .news_left .news__header,
+  .news .news_left .news__footer {
+    color: #666;
+    font-size: 12px;
+  }
+  .news__hashtag {
+    color: var(--primaryColor);
+    cursor: pointer;
+  }
+  .news .news_right img {
+    border-radius: 5px;
+  }
 }
