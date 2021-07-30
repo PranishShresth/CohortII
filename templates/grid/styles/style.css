@@ -96,6 +96,9 @@ main {
   border-bottom: 1px solid var(--secondaryColor);
 }
 
+aside {
+  display: none;
+}
 /* status */
 
 .statusContainer {
@@ -210,32 +213,18 @@ main {
 }
 
 @media (min-width: 992px) {
-  .container {
-    grid-template-columns: 250px 576px 300px;
-  }
   aside {
     display: block;
   }
+  .container {
+    grid-template-columns: 48px 576px 350px;
+  }
 
-  span.nav_link {
+  /* span.nav_link {
     display: inline;
     padding-left: 12px;
-  }
-  .twitter_btn_icon {
-    display: none;
-  }
-  .twitter_btn {
-    border-radius: 9999px;
-    color: white;
-    padding: 12px 20px;
-    background: var(--primaryColor);
-    font-weight: 700;
-    width: 70%;
-    height: 100%;
-  }
-  .twitter_btn::after {
-    content: "Tweet";
-  }
+  } */
+
   .nav_flex {
     justify-content: flex-start;
   }
@@ -301,5 +290,31 @@ main {
   .dot {
     padding: 0 5px;
     font-weight: 900;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    grid-template-columns: 250px 576px 350px;
+  }
+
+  .twitter_btn_icon {
+    display: none;
+  }
+  .twitter_btn {
+    border-radius: 9999px;
+    color: white;
+    padding: 12px 20px;
+    background: var(--primaryColor);
+    font-weight: 700;
+    width: 70%;
+    height: 100%;
+  }
+  .twitter_btn::after {
+    content: "Tweet";
+  }
+  span.nav_link {
+    display: inline;
+    padding-left: 12px;
   }
 }
