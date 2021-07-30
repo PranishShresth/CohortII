@@ -211,7 +211,7 @@ main {
 
 @media (min-width: 992px) {
   .container {
-    grid-template-columns: 250px 576px 350px;
+    grid-template-columns: 250px 576px 300px;
   }
   aside {
     display: block;
@@ -221,7 +221,21 @@ main {
     display: inline;
     padding-left: 12px;
   }
-
+  .twitter_btn_icon {
+    display: none;
+  }
+  .twitter_btn {
+    border-radius: 9999px;
+    color: white;
+    padding: 12px 20px;
+    background: var(--primaryColor);
+    font-weight: 700;
+    width: 70%;
+    height: 100%;
+  }
+  .twitter_btn::after {
+    content: "Tweet";
+  }
   .nav_flex {
     justify-content: flex-start;
   }
@@ -252,12 +266,19 @@ main {
   .asideNews_header {
     padding: 12px;
   }
+  .asideNews_header h3 {
+    font-weight: 900;
+  }
   .news {
     display: flex;
     padding: 12px;
-    gap: 5px;
+    gap: 20px;
+    transition: background-color 200ms linear;
+    cursor: pointer;
   }
-
+  .news:hover {
+    background-color: var(--secondaryColor);
+  }
   .news .news_left .news__body {
     font-weight: 700;
     font-size: 15px;
