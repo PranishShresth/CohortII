@@ -274,6 +274,11 @@ main {
     cursor: pointer;
   }
   .news .news_right img {
-    border-radius: 5px;
+    border-radius: 8px;
+  }
+
+  .dot {
+    padding: 0 5px;
+    font-weight: 900;
   }
 }
