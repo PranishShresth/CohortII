@@ -206,6 +206,10 @@ aside {
 }
 
 @media (min-width: 768px) {
+  /* .tweet:hover {
+    background-color: var(--secondaryColor);
+    cursor: pointer;
+  } */
   .container {
     width: 80%;
     margin: 0 auto;
