@@ -34,6 +34,7 @@ export default function GameBoard() {
     if (currentBoard[idx] || checkWinner(currentBoard)) {
       return;
     }
+    new Audio("https://www.w3schools.com/html/horse.ogg").play();
     currentBoard[idx] = player1Turn ? "🍩" : "🍰";
     setPlayer1Turn(!player1Turn);
     setBoard(currentBoard);
