@@ -28,16 +28,29 @@ function checkWinner(board) {
 export default function GameBoard() {
   const [board, setBoard] = useState(initialBoard);
   const [player1Turn, setPlayer1Turn] = useState(true);
+  const [history, setHistory] = useState([initialBoard]);
+  const [step, setStep] = useState(0);
 
   const handleClick = (idx) => {
-    const currentBoard = board.slice();
+    const currentBoard = history[history.length - 1].slice();
+    const newHistory = history.slice(0, step + 1);
     if (currentBoard[idx] || checkWinner(currentBoard)) {
       return;
     }
-    new Audio("https://www.w3schools.com/html/horse.ogg").play();
+
+    // if(player1Turn){
+    //     new Audio("https://www.w3schools.com/html/horse.ogg").play();
+    // }else{
+    //     new Audio("https://www.w3schools.com/html/horse.ogg").play();
+    // }
+    // //
     currentBoard[idx] = player1Turn ? "🍩" : "🍰";
+    newHistory.push(currentBoard);
+
     setPlayer1Turn(!player1Turn);
     setBoard(currentBoard);
+    setHistory(newHistory);
+    setStep(newHistory.length);
   };
   return (
     <div className="gameContainer">
@@ -53,7 +66,26 @@ export default function GameBoard() {
           );
         })}
       </div>
+      <div>{/* <pre>{JSON.stringify(history, null, 2)}</pre> */}</div>
       {/* Winner : {checkWinner(board)} */}
+
+      <div>
+        {history.map((currboard, boardIdx) => {
+          return (
+            <div key={boardIdx}>
+              <button
+                onClick={() => {
+                  setStep(boardIdx);
+
+                  setBoard(currboard);
+                }}
+              >
+                Go to step {boardIdx}
+              </button>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

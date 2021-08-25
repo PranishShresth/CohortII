@@ -6,7 +6,9 @@
 
 .gameContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .boardContainer {
   display: grid;
