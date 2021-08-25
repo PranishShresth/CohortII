@@ -8,6 +8,9 @@ export default function GameBoard() {
 
   const handleClick = (idx) => {
     const currentBoard = board.slice();
+    if (currentBoard[idx]) {
+      return;
+    }
     currentBoard[idx] = player1Turn ? "🍩" : "🍰";
     setPlayer1Turn(!player1Turn);
     setBoard(currentBoard);
