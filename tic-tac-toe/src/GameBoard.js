@@ -75,7 +75,9 @@ export default function GameBoard() {
             <div key={boardIdx}>
               <button
                 onClick={() => {
+                  // 0-donut 1 2-donut 3-pastry 4-donut
                   setStep(boardIdx);
+                  setPlayer1Turn(boardIdx % 2 === 0);
                   setBoard(currboard);
                 }}
               >
