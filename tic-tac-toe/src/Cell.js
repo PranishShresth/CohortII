@@ -1,6 +1,15 @@
 import React from "react";
 
 export default function Cell(props) {
-  const { cellIdx } = props;
-  return <div className="cell">{cellIdx}</div>;
+  const { cellIdx, handleClick } = props;
+
+  const handleCellClick = () => {
+    handleClick(cellIdx);
+    console.log("hey");
+  };
+  return (
+    <div className="cell" onClick={handleCellClick}>
+      {cellIdx}
+    </div>
+  );
 }

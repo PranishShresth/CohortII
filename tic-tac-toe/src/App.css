@@ -4,8 +4,13 @@
   padding: 0;
 }
 
+.gameContainer {
+  display: flex;
+  justify-content: center;
+}
 .boardContainer {
   display: grid;
+  /* justify-items: center; */
   grid-template-columns: repeat(3, 100px);
 }
 .boardContainer .cell {
