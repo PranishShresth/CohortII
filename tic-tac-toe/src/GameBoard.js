@@ -6,7 +6,9 @@ export default function GameBoard() {
   const [board, setBoard] = useState(initialBoard);
 
   const handleClick = (idx) => {
-    console.log(idx);
+    const currentBoard = board.slice();
+    currentBoard[idx] = "🍩";
+    setBoard(currentBoard);
   };
   return (
     <div className="gameContainer">

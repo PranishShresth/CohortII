@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Cell(props) {
-  const { cellIdx, handleClick } = props;
+  const { cellIdx, handleClick, cellValue } = props;
 
   const handleCellClick = () => {
     handleClick(cellIdx);
@@ -9,7 +9,7 @@ export default function Cell(props) {
   };
   return (
     <div className="cell" onClick={handleCellClick}>
-      {cellIdx}
+      {cellIdx} - {cellValue}
     </div>
   );
 }
