@@ -1,5 +1,6 @@
 import React from "react";
 
-export default function Cell() {
-  return <div></div>;
+export default function Cell(props) {
+  const { cellIdx } = props;
+  return <div>{cellIdx}</div>;
 }
