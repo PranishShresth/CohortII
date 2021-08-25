@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.boardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+}
+.boardContainer .cell {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid grey;
+  line-height: 50px;
+}
