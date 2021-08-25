@@ -32,8 +32,8 @@ export default function GameBoard() {
   const [step, setStep] = useState(0);
 
   const handleClick = (idx) => {
-    const currentBoard = history[history.length - 1].slice();
     const newHistory = history.slice(0, step + 1);
+    const currentBoard = newHistory[newHistory.length - 1].slice();
     if (currentBoard[idx] || checkWinner(currentBoard)) {
       return;
     }
@@ -76,7 +76,6 @@ export default function GameBoard() {
               <button
                 onClick={() => {
                   setStep(boardIdx);
-
                   setBoard(currboard);
                 }}
               >
