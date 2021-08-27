@@ -48,7 +48,7 @@ function GameProvider(props) {
     dispatch({ type: "GET_BREAKING_BAD", payload: data });
   };
   return (
-    <GameContext.Provider value={{ foo: "bar" }}>
+    <GameContext.Provider value={[handleGetEnemies, state]}>
       {props.children}
     </GameContext.Provider>
   );
