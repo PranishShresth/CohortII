@@ -1,5 +1,6 @@
 import "./App.css";
 import { useSelector, useDispatch } from "react-redux";
+import Jokes from "./components/Jokes";
 
 function App() {
   const dispatch = useDispatch();
@@ -22,6 +23,10 @@ function App() {
       >
         Deposit 10$
       </button>
+
+      <div>
+        <Jokes />
+      </div>
     </div>
   );
 }
