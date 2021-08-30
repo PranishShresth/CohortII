@@ -8,7 +8,6 @@ export default function Jokes() {
 
   useEffect(() => {
     dispatch(fetchMyJokes());
-    // fetchMyJokes();
   }, []);
-  return <div>This is where joke lies </div>;
+  return <div>J</div>;
 }
