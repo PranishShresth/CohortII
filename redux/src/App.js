@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <h1>Bank App</h1>
-      <pre>{JSON.stringify(store, null, 2)}</pre>
+      {/* <pre>{JSON.stringify(store, null, 2)}</pre> */}
       <button
         onClick={() => {
           dispatch({ type: "WITHDRAW_MONEY" });
