@@ -19,8 +19,18 @@ app.get("/", async function (req, res) {
 });
 
 app.put("/todos/:todoId", async function (req, res) {
-  const todo = await Todo.find({ task: "Do the chores 12" });
-  res.send(todo);
+  try {
+    if (req.body.task === "") {
+      return res.status(400).send("Task is empty");
+    }
+    const task = req.body.task;
+    const todo = await Todo.findOne({ _id: req.params.todoId });
+    todo.task = task;
+    todo.save();
+    res.send(todo);
+  } catch (err) {
+    res.status(500).send("Internal server error");
+  }
 });
 //seeding the database
 // const todos = [
