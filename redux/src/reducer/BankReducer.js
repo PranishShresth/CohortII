@@ -4,6 +4,7 @@ const initialState = {
 
 const WITHDRAW_MONEY = "WITHDRAW_MONEY";
 const DEPOSIT_MONEY = "DEPOSIT_MONEY";
+
 export function BankReducer(state = initialState, action) {
   switch (action.type) {
     case WITHDRAW_MONEY:
