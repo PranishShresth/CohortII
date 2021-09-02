@@ -1,11 +1,12 @@
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 5000;
+const path = require("path");
 
 app.use(express.json());
 
 app.get("/", function (req, res) {
-  res.send("Hello from the other side");
+  res.sendFile(path.resolve("index.html"));
 });
 
 app.listen(PORT, () => {
