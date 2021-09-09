@@ -32,6 +32,17 @@ app.put("/todos/:todoId", async function (req, res) {
     res.status(500).send("Internal server error");
   }
 });
+
+app.delete("/todos/:todoId", async function (req, res) {
+  try {
+    const todoId = req.params.todoId;
+    await Todo.findByIdAndDelete(todoId);
+    res.status(200).send(`Todo with id ${todoId} has been deleted`);
+  } catch (err) {
+    res.status(500).send("Internal server error");
+  }
+});
+
 //seeding the database
 // const todos = [
 //   { task: "Do the laundry 1" },

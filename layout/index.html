@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./script.js" defer></script>
+    <title>Tasq</title>
+  </head>
+  <body>
+    <div class="pageContainer">
+      <div class="contentWrapper">
+        <div class="topBar">
+          <div class="logoContainer">
+            <div class="logo">
+              <h2 class="logoLink">tasq</h2>
+            </div>
+          </div>
+          <div class="searchBar">
+            <div class="searchContainer">
+              <i className="fas fa-search"></i>
+              <input
+                class="searchInput"
+                type="text"
+                placeholder="Search User"
+              />
+              <div class="sunIcon">
+                <i id="sunIcon" class="fas fa-sun modeToggle"></i>
+              </div>
+              <div class="hamburger">
+                <i class="fas fa-bars hamburger"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bodyContainer">
+          <div class="sideBar">
+            <div class="iconContainer curr">
+              <i class="fas fa-plus sidebarIcon"></i>
+              <p class="btnFunction">Add tasq</p>
+            </div>
+            <div class="iconContainer">
+              <i class="fas fa-tasks sidebarIcon"></i>
+              <p class="btnFunction">View All tasq</p>
+            </div>
+            <div class="iconContainer">
+              <i class="fas fa-users-cog sidebarIcon"></i>
+              <p class="btnFunction">Manage Users</p>
+            </div>
+            <div class="iconContainer">
+              <i class="fas fa-chart-pie sidebarIcon"></i>
+              <p class="btnFunction">Analytics</p>
+            </div>
+            <div class="iconContainer">
+              <i class="fas fa-user sidebarIcon"></i>
+              <p class="btnFunction">Profile</p>
+            </div>
+          </div>
+
+          <div class="sideBar-mobile">
+            <div class="iconContainer-mobile curr">
+              <i class="fas fa-plus sidebarIcon"></i>
+              <p class="btnFunction-mobile">Add tasq</p>
+            </div>
+            <div class="iconContainer-mobile">
+              <i class="fas fa-tasks sidebarIcon"></i>
+              <p class="btnFunction-mobile">View All tasq</p>
+            </div>
+            <div class="iconContainer-mobile">
+              <i class="fas fa-users-cog sidebarIcon"></i>
+              <p class="btnFunction-mobile">Manage Users</p>
+            </div>
+            <div class="iconContainer-mobile">
+              <i class="fas fa-chart-pie sidebarIcon"></i>
+              <p class="btnFunction-mobile">Analytics</p>
+            </div>
+            <div class="iconContainer-mobile">
+              <i class="fas fa-user sidebarIcon"></i>
+              <p class="btnFunction-mobile">Profile</p>
+            </div>
+          </div>
+
+          <div class="childContainer">
+            <div class="analyticsContainer">
+              <div class="firstRow">
+                <div class="anayticsCard">
+                  <h4>Pending Todos</h4>
+                  <p>1234</p>
+                </div>
+                <div class="anayticsCard">
+                  <h4>Pending Todos</h4>
+                  <p>1234</p>
+                </div>
+                <div class="anayticsCard">
+                  <h4>Pending Todos</h4>
+                  <p>1234</p>
+                </div>
+              </div>
+
+              <!-- second row -->
+              <div class="secondRow">
+                <div class="anayticsCard bigCard">
+                  <div>
+                    <h4>Active user this week</h4>
+                    <p>1234</p>
+                  </div>
+                  <div>
+                    <h4>New user this week</h4>
+                    <p>123423</p>
+                  </div>
+                </div>
+                <div class="anayticsCard">
+                  <h4>New User</h4>
+                  <p>1234</p>
+                </div>
+              </div>
+
+              <!-- third row -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
