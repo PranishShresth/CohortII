@@ -189,7 +189,8 @@ body {
   padding: 20px;
 }
 /* second row analtytics */
-.secondRow {
+.secondRow,
+.fourthRow {
   display: grid;
   gap: 10px;
   grid-template-columns: 2fr 1fr;
@@ -230,6 +231,10 @@ body {
 }
 
 @media (max-width: 760px) {
+  .secondRow,
+  .fourthRow {
+    grid-template-columns: 1fr;
+  }
   .contentWrapper {
     width: 100%;
   }
